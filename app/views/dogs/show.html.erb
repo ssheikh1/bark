@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @dog.username %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dog.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dog.email %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @dog.password_digest %>
+</p>
+
+<p>
+  <strong>Avatar url:</strong>
+  <%= @dog.avatar_url %>
+</p>
+
+<%= link_to 'Edit', edit_dog_path(@dog) %> |
+<%= link_to 'Back', dogs_path %>
