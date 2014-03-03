@@ -1,6 +1,4 @@
 Bark::Application.routes.draw do
-  resources :dogs
-
   root to: 'users#new'
 
   resources :users
