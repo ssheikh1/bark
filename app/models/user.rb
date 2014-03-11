@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   validates :username, uniqueness: true, presence: true
   validates :email, uniqueness: true, presence: true
-
+  has_many :woofs
+  
   def create_avatar_url
     self.avatar_url = "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(self.email)}?s=50"
   end
