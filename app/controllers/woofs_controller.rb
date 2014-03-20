@@ -5,9 +5,9 @@ def index
   @woof = Woof.new
 end
 
-	def create
-		@woof = Woof.new(woof_params) 
-		@woof.user_id = current_user.id
+def create
+	@woof = Woof.new(woof_params) 
+	@woof.user_id = current_user.id
 
 	if @woof.save
 		redirect_to current_user
